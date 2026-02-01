@@ -34,6 +34,10 @@ app_ui <- function(request) {
         fluidPage(
             theme = app_theme(),
             shinyjs::useShinyjs(),
+            tags$script(
+                "data-goatcounter" = "https://threatlayers.goatcounter.com/count",
+                "async src" = "//gc.zgo.at/count.js"
+            ),
             bslib::navset_tab(
                 id = "main_tabs",
                 title = NULL,
