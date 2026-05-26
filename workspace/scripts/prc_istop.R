@@ -71,7 +71,7 @@ prc_istop <- function(input_files, output_path) {
 
       # Rename categories
       x$category <- gsub("1A - Slick attached to target / Nappe de pétrole attenant à une cible radar", "1A", x$category)
-      x$category <- gsub("1B - Slick with taget in area / Nappe de pétrole avec la cible dans la zone", "1B", x$category)
+      x$category <- gsub("1B - Slick with target in area / Nappe de pétrole avec la cible dans la zone", "1B", x$category)
       x$category <- gsub("2 - Slick without source / Nappe de pétrole sans source", "2", x$category)
       x$category <- gsub("3 - Possible oil / Possible Nappe de pétrole", "3", x$category)
     }

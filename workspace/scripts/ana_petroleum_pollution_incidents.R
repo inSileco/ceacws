@@ -219,7 +219,7 @@ ana_petroleum_pollution_incidents_istop <- function(input_files, output_path) {
     sf::st_read(quiet = TRUE) |>
     dplyr::filter(!is.na(date)) |>
     dplyr::distinct() |>
-    dplyr::filter(category %in% c("1A", "1B", "B")) |>
+    dplyr::filter(category %in% c("1A", "1B", "2")) |>
     dplyr::rename(geometry = geom) |>
     dplyr::mutate(
       area = sf::st_area(geometry),
